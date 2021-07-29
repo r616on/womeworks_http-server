@@ -2,7 +2,7 @@ const http = require("http");
 const Koa = require("koa");
 const app = new Koa();
 const koaBody = require("koa-body");
-const port = 7070; // слушаем определённый порт
+const port = process.env.PORT || 7070; // слушаем определённый порт
 const cors = require("@koa/cors");
 let moment = require("moment");
 
@@ -107,7 +107,7 @@ app.use(async (ctx) => {
   }
 });
 
-const server = http.createServer(app.callback()).listen(7070);
+const server = http.createServer(app.callback()).listen(port);
 
 function genId() {
   const id = new Date().getTime();
