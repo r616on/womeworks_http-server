@@ -93,6 +93,7 @@ app.use(async (ctx) => {
           }
         });
         tickets.splice([index], 1);
+
         ctx.response.body = { ok: true };
         break;
       // TODO: обработка остальных методов
@@ -106,7 +107,7 @@ app.use(async (ctx) => {
   }
 });
 
-const server = http.createServer(app.callback()).listen(70);
+const server = http.createServer(app.callback()).listen(7070);
 
 function genId() {
   const id = new Date().getTime();
