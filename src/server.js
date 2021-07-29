@@ -106,7 +106,7 @@ app.use(async (ctx) => {
   }
 });
 
-const server = http.createServer(app.callback()).listen(7070);
+const server = http.createServer(app.callback()).listen(70);
 
 function genId() {
   const id = new Date().getTime();
