@@ -1,0 +1,28 @@
+{
+  "name": "ajs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever ./src/server.js",
+    "watch": "forever -w ./src/server.js"
+  },
+  "author": "r616on",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "forever": "^4.0.1",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r616on/womeworks_http-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/r616on/womeworks_http-server/issues"
+  },
+  "homepage": "https://github.com/r616on/womeworks_http-server#readme",
+  "description": ""
+}
