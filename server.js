@@ -31,7 +31,7 @@ app.use(
     multipart: true,
   })
 );
-//app.use(cors());
+// app.use(cors());
 
 let tickets = [
   new Ticket(1627493913588, "Тэстовый", " Что то длинное"),
