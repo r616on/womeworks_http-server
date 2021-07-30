@@ -1,11 +1,13 @@
 {
   "name": "ajs",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "server",
+  "main": "server.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "forever ./src/server.js",
-    "watch": "forever -w ./src/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
   },
   "engines": {
     "node": "11.x"
@@ -27,6 +29,5 @@
   "bugs": {
     "url": "https://github.com/r616on/womeworks_http-server/issues"
   },
-  "homepage": "https://github.com/r616on/womeworks_http-server#readme",
-  "description": ""
+  "homepage": "https://github.com/r616on/womeworks_http-server#readme"
 }
