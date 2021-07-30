@@ -39,6 +39,9 @@ let tickets = [
 ];
 
 app.use(async (ctx) => {
+  ctx.response.set({
+    "Access-Control-Allow-Origin": "*",
+  });
   if (ctx.request.method === "POST") {
     const data = JSON.parse(ctx.request.body);
     switch (data.method) {
